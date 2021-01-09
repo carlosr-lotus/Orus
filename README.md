@@ -3,10 +3,10 @@
 - This project was created for my portfolio and also to enhance my development skills.
 
 ## Tools used in this project:
-- Development Tools
+- Development Tools: 
 **HTML, CSS and Vanilla Javascript.**
 
-- Design/UI tools
+- Design/UI tools: 
 **Adobe XD, Affinity Design**
 
 - This website was created using Mozilla Firefox, however, it was also tested on the following browsers: **Google Chrome, Safari, Edge and Brave.**
