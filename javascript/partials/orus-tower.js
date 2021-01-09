@@ -1,4 +1,4 @@
-// ***** GLOBAL CONTENT *****
+// ***** GLOBAL CONTENT ***** //
 const upgrades = {
     // Base Model
     cpu: 'Ryzen 5 3600x 6-cores/12-threads 3.8Ghz',
@@ -17,7 +17,7 @@ let finalPriceInteger = parseInt(finalPrice.innerText, 10);
 
 // Get installment price(line 181) and convert to FLOAT value
 let installmentPrice = document.querySelector('[data-js="installments-price"]');
-// ***** END GLOBAL CONTENT *****
+// ***** END GLOBAL CONTENT ***** //
 
 // =-=-=-= UPGRADE OPTION 1 - CPU/PROCESSOR =-=-=-= //
 // Get all CPU/PROCESSOR boxes

@@ -8,7 +8,7 @@ const upgrades = {
 
 // Global = Get base model/specs from div 'specs' (line 75) from HTML file
 let productHardware = document.querySelectorAll('[data-js="product-upgrades"]');
-
+// ***** GLOBAL CONTENT ***** //
 
 // -=-=-=- Get FINAL PRICE(line 180) $$$ -=-=-=-
 // Starting price: $999.00

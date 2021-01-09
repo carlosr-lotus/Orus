@@ -1,4 +1,4 @@
-// ***** GLOBAL CONTENT *****
+// ***** GLOBAL CONTENT ***** //
 const upgrades = {
     // Base Model
     color: 'White',
@@ -6,6 +6,7 @@ const upgrades = {
 
 // Global = Get base model/specs from div 'specs' (line 78) from HTML file
 let productHardware = document.querySelectorAll('[data-js="product-upgrades"]');
+// ***** END GLOBAL CONTENT ***** //
 
 // =-=-=-= UPGRADE OPTION - COLOR =-=-=-= //
 // Get all COLOR boxes
