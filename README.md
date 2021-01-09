@@ -11,7 +11,7 @@
 - Design/UI tools: 
 **Adobe XD, Affinity Design**
 
-- This website was created using Mozilla Firefox, however, it was also tested on the following browsers: **Google Chrome, Safari, Edge and Brave.**
+- This website was created using **Mozilla Firefox**, however, it was also tested on the following browsers: **Google Chrome, Safari, Edge and Brave.**
 
 ## What will the user be able to do?
 
