@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Link to CSS files -->
+    <link rel="stylesheet" href="./css/partials/product-buy.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <title>Orus Tech</title>
+</head>
+
+<body>
+    <div id="container">
+
+        <!-- Side Menu -->
+        <div class="side-menu" data-js="side-menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./orus-tower.html">Orus Tower</a></li>
+                <li><a href="./orus-phone.html">Orus Phone</a></li>
+                <li><a href="./orus-book.html">Orus Book</a></li>
+                <li><a href="./orus-headphone.html">Orus Headphone</a></li>
+            </ul>
+        </div>
+
+        <header>
+            <!-- Hamburguer Icon + Logo -->
+            <div class="menu-icon" data-js="menu-icon"></div>
+            <a href="./index.html"><img src="./images/logo/logo-black.png" alt="logo" class="header-logo"></a>
+        </header>
+
+        <main>
+            <!-- Orus Headphone -->
+            <div class="product-container">
+
+                <div class="carousel">
+
+                    <!-- Orus Headphone Photo 1 -->
+                    <div data-js="carousel-item" class="carousel-photo carousel-photo--visible">
+                        <img src="./images/headphone/headphone-white.png" alt="orus-phone">
+                    </div>
+
+                    <!-- Orus Headphone Photo 2 -->
+                    <div data-js="carousel-item" class="carousel-photo carousel-photo--hidden">
+                        <img src="./images/headphone/headphone-black.png" alt="orus-phone">
+                    </div>
+
+                    <!-- Carousel actions(previous/next slide) -->
+                    <div class="carousel-arrows">
+
+                        <button data-js="carousel_arrow-prev" aria-label="Previous slide">
+                            < </button>
+
+                                <button data-js="carousel_arrow-next" aria-label="Next slide">></button>
+                    </div>
+                </div>
+
+                <div class="specs-container">
+                    <h2 class="specs-header">Customize your new Orus Headphone.</h2>
+
+                    <div class="specs">
+                        <!-- *** Base Model *** -->
+                        <!-- They will change according to user's upgrade choice -->
+                        <p data-js="product-upgrades">White</p>
+                        <p>Bluetooth 5.0</p>
+                        <p>Up to 20 hours of audio listening</p>
+                    </div>
+                    <p class="specs-note">Note: Includes case, charging cable (USB-C) and a headphone jack adapter.
+                    </p>
+
+                    <!-- This div will contain all available upgrades for the product (COLOR) -->
+                    <div class="upgrade-container">
+
+                        <!-- Color Upgrade -->
+                        <div class="color-container-headphone">
+                            <h2>Colors</h2>
+
+                            <!-- White -->
+                            <div class="color-box active" data-js="colorList">
+                                <p>White</p>
+                                <span class="off" data-js="color-price"></span>
+                            </div>
+
+                            <!-- Black -->
+                            <div class="color-box" data-js="colorList">
+                                <p>Black</p>
+                                <span data-js="color-price"></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+    </div>
+
+    <div class="purchase-info">
+
+        <!-- Here will display price, buy option and delivery dates -->
+        <div class="buy-container">
+            <!-- Starting price -->
+            <h2 class="final-price">$<span data-js="final-price">249.00</span></h2>
+            <p>12x $<span data-js="installments-price">20.75</span></p>
+            <button class="buy-button"><a href="#">Buy Now</a></button>
+        </div>
+    </div>
+
+    </main>
+
+    <!-- Link to Javascript files -->
+    <script src="./javascript/menu.js"></script>
+    <script src="./javascript/partials/carousel.js"></script>
+    <script src="./javascript/partials/orus-headphone.js"></script>
+</body>

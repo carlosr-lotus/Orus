@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Link to CSS files -->
+    <link rel="stylesheet" href="./css/partials/product-buy.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <title>Orus Tech</title>
+</head>
+
+<body>
+    <div id="container">
+
+        <!-- Side Menu -->
+        <div class="side-menu" data-js="side-menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./orus-tower.html">Orus Tower</a></li>
+                <li><a href="./orus-phone.html">Orus Phone</a></li>
+                <li><a href="./orus-book.html">Orus Book</a></li>
+                <li><a href="./orus-headphone.html">Orus Headphone</a></li>
+            </ul>
+        </div>
+
+        <header>
+            <!-- Hamburguer Icon + Logo -->
+            <div class="menu-icon" data-js="menu-icon"></div>
+            <a href="./index.html"><img src="./images/logo/logo-black.png" alt="logo" class="header-logo"></a>
+        </header>
+
+        <main>
+            <!-- Orus Book -->
+            <div class="product-container">
+
+                <div class="carousel">
+
+                    <!-- Orus Book Photo 1 -->
+                    <div data-js="carousel-item" class="carousel-photo carousel-photo--visible">
+                        <img src="./images/laptop/laptop-1.png" alt="orus-book">
+                    </div>
+
+                    <!-- Orus Book Photo 2 -->
+                    <div data-js="carousel-item" class="carousel-photo carousel-photo--hidden">
+                        <img src="./images/laptop/laptop-2.png" alt="orus-book">
+                    </div>
+
+                    <!-- Orus Book Photo 3 -->
+                    <div data-js="carousel-item" class="carousel-photo carousel-photo--hidden">
+                        <img src="./images/laptop/laptop-3.png" alt="orus-book">
+                    </div>
+
+                    <!-- Carousel actions(previous/next slide) -->
+                    <div class="carousel-arrows">
+
+                        <button data-js="carousel_arrow-prev" aria-label="Previous slide">
+                            < </button>
+
+                                <button data-js="carousel_arrow-next" aria-label="Next slide">></button>
+                    </div>
+                </div>
+
+                <div class="specs-container">
+                    <h2 class="specs-header">Customize your Orus Book to best suit your needs.</h2>
+
+                    <div class="specs">
+                        <!-- *** Base Model *** -->
+                        <!-- They will change according to user's upgrade choice -->
+                        <p data-js="product-upgrades">Ryzen 5 4600H 6-cores/12-threads 3.0Ghz</p>
+                        <p data-js="product-upgrades">8 GB DDR4 Memory</p>
+                        <p data-js="product-upgrades">AMD Radeon Graphics</p>
+                        <p data-js="product-upgrades">512gb SSD</p>
+                        <p>Full HD Screen with touch support (pen included)</p>
+                    </div>
+                    <p class="specs-note">Note: The Orus Book can be upgraded with third-party hardware after the
+                        purchase.</p>
+
+                    <!-- This div will contain all available upgrades for the product such as CPU/RAM/Storage, etc. -->
+                    <div class="upgrade-container">
+
+                        <!-- CPU/Processor Upgrade -->
+                        <div class="cpu-container-book">
+                            <h2>Processor</h2>
+
+                            <!-- Ryzen 5 4600H -->
+                            <div class="cpu-box active" data-js="cpuList">
+                                <p>Ryzen 5 4600H 6-cores/12-threads 3.0Ghz</p>
+                                <span class="off" data-js="cpu-price"></span>
+                            </div>
+
+                            <!-- Ryzen 7 4800 -->
+                            <div class="cpu-box" data-js="cpuList">
+                                <p>Ryzen 7 4800H 8-cores/16-threads 2.9Ghz</p>
+                                <span data-js="cpu-price">+ $300</span>
+                            </div>
+                        </div>
+
+                        <!-- RAM Memory Upgrade -->
+                        <div class="RAM-container">
+                            <h2>Memory</h2>
+
+                            <div class="RAM-box active" data-js="RAMList">
+                                <p>8 GB DDR4 Memory</p>
+                                <span class="off"></span>
+                            </div>
+                            <div class="RAM-box" data-js="RAMList">
+                                <p>16 GB DDR4 Memory</p>
+                                <p>+ $100</p>
+                            </div>
+                            <div class="RAM-box" data-js="RAMList">
+                                <p>32 GB DDR4 Memory</p>
+                                <p>+ $200</p>
+                            </div>
+                        </div>
+
+                        <!-- Storage Upgrade -->
+                        <div class="storage-container-book">
+                            <h2>Storage</h2>
+
+                            <div class="SSD-box active" data-js="SSDList">
+                                <p>512GB SSD</p>
+                                <span class="off"></span>
+                            </div>
+                            <div class="SSD-box" data-js="SSDList">
+                                <p>1TB SSD</p>
+                                <span>+ $150</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="purchase-info">
+
+                <!-- Here will display price, buy option and delivery dates -->
+                <div class="buy-container">
+                    <!-- Starting price -->
+                    <h2 class="final-price">$<span data-js="final-price">1099.00</span></h2>
+                    <p>12x $<span data-js="installments-price">91.58</span></p>
+                    <button class="buy-button"><a href="#">Buy Now</a></button>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Link to Javascript files -->
+        <script src="./javascript/menu.js"></script>
+        <script src="./javascript/partials/carousel.js"></script>
+        <script src="./javascript/partials/orus-book.js"></script>
+</body>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Link to CSS files -->
+    <link rel="stylesheet" href="./css/partials/product-buy.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <title>Orus Tech</title>
+</head>
+
+<body>
+    <div id="container">
+
+        <!-- Side Menu -->
+        <div class="side-menu" data-js="side-menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./orus-tower.html">Orus Tower</a></li>
+                <li><a href="./orus-phone.html">Orus Phone</a></li>
+                <li><a href="./orus-book.html">Orus Book</a></li>
+                <li><a href="./orus-headphone.html">Orus Headphone</a></li>
+            </ul>
+        </div>
+
+        <header>
+            <!-- Hamburguer Icon + Logo -->
+            <div class="menu-icon" data-js="menu-icon"></div>
+            <a href="./index.html"><img src="./images/logo/logo-black.png" alt="logo" class="header-logo"></a>
+        </header>
+
+        <main>
+            <!-- Orus Phone -->
+            <div class="product-container">
+
+                <div class="carousel">
+
+                    <!-- Orus Phone Photo 1 -->
+                    <div data-js="carousel-item" class="carousel-photo carousel-photo--visible">
+                        <img src="./images/phone/phone-1.png" alt="orus-phone">
+                    </div>
+
+                    <!-- Orus Phone Photo 2 -->
+                    <div data-js="carousel-item" class="carousel-photo carousel-photo--hidden">
+                        <img src="./images/phone/phone-2.png" alt="orus-phone">
+                    </div>
+
+                    <!-- Orus Phone Photo 3 -->
+                    <div data-js="carousel-item" class="carousel-photo carousel-photo--hidden">
+                        <img src="./images/phone/phone-3.png" alt="orus-phone">
+                    </div>
+
+                    <!-- Carousel actions(previous/next slide) -->
+                    <div class="carousel-arrows">
+
+                        <button data-js="carousel_arrow-prev" aria-label="Previous slide">
+                            < </button>
+
+                                <button data-js="carousel_arrow-next" aria-label="Next slide">></button>
+                    </div>
+                </div>
+
+                <div class="specs-container">
+                    <h2 class="specs-header">Customize your Orus Phone to best suit your needs.</h2>
+
+                    <div class="specs">
+                        <!-- *** Base Model *** -->
+                        <!-- They will change according to user's upgrade choice -->
+                        <p data-js="product-upgrades">Color: White</p>
+                        <p data-js="product-upgrades">128GB Storage</p>
+                        <p data-js="product-upgrades">Orus A1 Chip</p>
+                    </div>
+                    <p class="specs-note">Note: Storage size upgrade is available through a SD Card after purchase.
+                    </p>
+
+                    <!-- This div will contain all available upgrades for the product such as STORAGE, COLOR, etc. -->
+                    <div class="upgrade-container">
+
+                        <!-- Color Upgrade -->
+                        <div class="color-container">
+                            <h2>Colors</h2>
+
+                            <!-- White -->
+                            <div class="color-box active" data-js="colorList">
+                                <p>White (only color available)</p>
+                                <span class="off" data-js="color-price"></span>
+                            </div>
+                        </div>
+
+                        <!-- Storage Upgrade -->
+                        <div class="storage-container">
+                            <h2>Memory</h2>
+
+                            <div class="storage-box active" data-js="storageList">
+                                <p>128GB Storage</p>
+                                <span class="off" data-js="storage-price"></span>
+                            </div>
+                            <div class="storage-box" data-js="storageList">
+                                <p>256GB Storage</p>
+                                <span data-js="storage-price">+ $150</span>
+                            </div>
+                            <div class="storage-box" data-js="storageList">
+                                <p>512GB Storage</p>
+                                <span data-js="storage-price">+ $300</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="purchase-info">
+
+                <!-- Here will display price, buy option and delivery dates -->
+                <div class="buy-container">
+                    <!-- Starting price -->
+                    <h2 class="final-price">$<span data-js="final-price">699.00</span></h2>
+                    <p>12x $<span data-js="installments-price">58.25</span></p>
+                    <button class="buy-button"><a href="#">Buy Now</a></button>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Link to Javascript files -->
+        <script src="./javascript/menu.js"></script>
+        <script src="./javascript/partials/carousel.js"></script>
+        <script src="./javascript/partials/orus-phone.js"></script>
+</body>

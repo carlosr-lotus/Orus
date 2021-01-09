@@ -1,0 +1,246 @@
+:root {
+    /* Colors */
+    --Main-Dark: #504F4F;
+    --Button-Background-Color: #4C8ADD;
+    --Dark-Grey: #707070;
+    --Text-Light: #E2DFDF;
+
+    /* Font size - 10px = 1rem */
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+/* Mobile Design First */
+#container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+header {
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Hamburguer Icon + Logo */
+header .menu-icon {
+    width: 25px;
+    height: 2px;
+
+    background-color: var(--Dark-Grey);
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: all .5s ease-in-out;
+
+    z-index: 10;
+}
+
+header .menu-icon.active {
+    position: fixed;
+}
+
+/* Top Bar Menu Icon + Bottom Bar Menu Icon */
+.menu-icon::before,
+.menu-icon::after {
+    content: '';
+    position: absolute;
+
+    width: 25px;
+    height: 2px;
+
+    background-color: var(--Dark-Grey);
+    border-radius: 5px;
+
+    transition: all .5s ease-in-out;
+}
+
+.menu-icon::before {
+    transform: translateY(-5px);
+}
+
+.menu-icon::after {
+    transform: translateY(5px);
+}
+
+/* Global CSS for button */
+button {
+    font-family: 'Poppins',
+        sans-serif;
+
+    width: 112px;
+    height: 36px;
+
+    border: none;
+    border-radius: 24px;
+
+    background-color: var(--Button-Background-Color);
+    -webkit-box-shadow: 0px 0px 4px -1px #000000;
+    box-shadow: 0px 0px 4px -1px #000000;
+
+    font-size: 1.4rem;
+    transition: .5s;
+
+    cursor: pointer;
+}
+
+button a {
+    color: var(--Text-Light);
+    text-decoration: none;
+}
+
+button:hover {
+    transform: scale(1.15);
+}
+
+/* Javascript file toggles "open" class */
+.menu-icon.open {
+    transform: translateX(-50px);
+    background: transparent;
+}
+
+.menu-icon.open::before {
+    transform: rotate(45deg) translate(35px, -35px);
+    background-color: var(--Text-Light);
+}
+
+.menu-icon.open::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+    background-color: var(--Text-Light);
+}
+
+/* Hidden Menu Configurations */
+.side-menu {
+    visibility: hidden;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    background-color: var(--Dark-Grey);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 10;
+
+    transition: .5s;
+}
+
+.side-menu.visible {
+    visibility: visible;
+}
+
+.side-menu ul li {
+    margin: 1.8rem 0;
+    list-style: none;
+}
+
+.side-menu ul li a {
+    font-size: 1.8rem;
+    text-decoration: none;
+
+    color: var(--Text-Light);
+    transition: .2s;
+}
+
+.side-menu ul li a:hover {
+    color: #fff;
+}
+
+/* TABLET RESPONSIVE WEBSITE */
+@media (min-width: 701px) and (max-width: 1366px) {
+    #container {
+        max-width: 1366px;
+    }
+
+    .product-presentation h2 {
+        font-size: 4rem;
+    }
+
+    .product-presentation h3 {
+        font-size: 3rem;
+    }
+
+    section h1 {
+        font-size: 2.5rem;
+    }
+
+    section p {
+        font-size: 1.6rem;
+    }
+
+    .product-container>img {
+        width: 40%;
+    }
+
+    button {
+        width: 110px;
+    }
+}
+
+/* LAPTOP - LARGE RESPONSIVE WEBSITE */
+@media (min-width: 1366px) and (max-width: 1440px) {
+    #container {
+        max-width: 1440px;
+    }
+
+    .product-container>img {
+        width: 40%;
+    }
+
+    button {
+        width: 120px;
+        height: 40px;
+    }
+}
+
+/* DESKTOP - LARGE RESPONSIVE WEBSITE */
+@media(min-width: 1440px) {
+    #container {
+        max-width: none;
+    }
+
+    header {
+        width: 85%;
+    }
+
+    .product-presentation h2 {
+        font-size: 4.5rem;
+    }
+
+    .product-presentation h3 {
+        font-size: 3.5rem;
+    }
+
+    section h1 {
+        font-size: 2.5rem;
+    }
+
+    section p {
+        font-size: 1.8rem;
+    }
+
+    .product-container>img {
+        width: 30%;
+    }
+
+    .product-container>.orus-phone-image,
+    .orus-book-img {
+        width: 40%;
+    }
+}
