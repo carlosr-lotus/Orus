@@ -245,6 +245,10 @@ main {
         width: 50%;
     }
 
+    .carousel .carousel-arrows {
+        width: 50%;
+    }
+
     .specs-container {
         width: 50%;
     }

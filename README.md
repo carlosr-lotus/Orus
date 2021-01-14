@@ -1,6 +1,6 @@
 # Orus e-Commerce Project
 
-- Link to Website: https://angry-snyder-846512.netlify.app/
+- Link to Website: 
 
 - This project was created for my portfolio and also to enhance my development skills.
 
